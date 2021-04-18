@@ -125,7 +125,6 @@ $(function () {
                 type: 'DELETE',
                 url: '/task/delete/'+id,
                 data: {id: id},
-                async: true,
                 success: function (data) {
                     $('#taskTableBody').find('tr[data-id="'+id+'"]').remove();
                 },
